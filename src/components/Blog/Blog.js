@@ -5,6 +5,8 @@ import { faTags, faEye } from '@fortawesome/free-solid-svg-icons';
 import './Blog.css'
 
 const Blog = (props) => {
+
+    // desturcturing props 
     const { title, author, img, authorImg, description, view } = props.blog;
     return (
         <Grid item xs={4}>

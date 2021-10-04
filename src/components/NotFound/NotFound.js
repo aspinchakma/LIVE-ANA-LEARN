@@ -5,6 +5,7 @@ import './NotFound.css'
 const NotFound = () => {
     return (
         <div className="not-found">
+            {/* Not Found container */}
 
             <Grid container rowSpacing={0} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 

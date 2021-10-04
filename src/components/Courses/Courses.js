@@ -7,6 +7,8 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
+
+    // Recieve Data 
     useEffect(() => {
         fetch('/Courses.JSON')
             .then(res => res.json())

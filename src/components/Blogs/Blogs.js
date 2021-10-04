@@ -15,6 +15,8 @@ const Blogs = () => {
     }, [])
     return (
         <div className="blog-container">
+
+            {/* blogs container  */}
             <h2>READ OUR BLOGS</h2>
             <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 

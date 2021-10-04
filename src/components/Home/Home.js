@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Course from '../Course/Course';
-import CircularProgress from '@mui/material/CircularProgress';
-
+import Stack from '@mui/material/Stack';
+import LinearProgress from '@mui/material/LinearProgress';
 import './Home.css'
 import { Grid } from '@mui/material';
 import { NavLink } from 'react-router-dom';
@@ -23,6 +23,7 @@ const Home = () => {
         }
     }
     return (
+        // Home container 
         <div className="home-container">
             <div className="banner-container">
                 <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -42,8 +43,9 @@ const Home = () => {
             <Grid container rowSpacing={4} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 {
                     courses.length ? newCourseShowForHome.map(course => <Course key={course.id} course={course}></Course>)
-                        :
-                        <CircularProgress />}
+                        : <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>
+                            <LinearProgress color="secondary" />
+                        </Stack>}
 
                 <div className="view-all-course-button">
 

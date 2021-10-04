@@ -2,12 +2,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Avatar, Card, CardContent, CardHeader, CardMedia, Grid, Rating } from '@mui/material';
 import React from 'react';
 import './Course.css';
-import { faUser, faTags } from '@fortawesome/free-solid-svg-icons';
+import { faTags } from '@fortawesome/free-solid-svg-icons';
 
 const Course = (props) => {
-    const { courseName, img, instructor, instructorImg, totalStudent } = props.course;
+    // Accept Data 
+    const { courseName, img, instructor, instructorImg, price } = props.course;
     return (
         <Grid item xs={4}>
+            {/* single card  */}
             <Card className="single-card">
 
                 <div className="content-image-container">
@@ -35,7 +37,7 @@ const Course = (props) => {
                         <Grid item xs={4}>
 
 
-                            <p className="total-student"><FontAwesomeIcon icon={faUser} /> {totalStudent}</p>
+                            <p className="total-student">Price : ${price}</p>
                         </Grid>
                         <Grid item xs={4}>
                             <p className="category"><FontAwesomeIcon icon={faTags} /> Education</p>
