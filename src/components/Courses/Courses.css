@@ -1,0 +1,11 @@
+.mini-course-container{
+    width: 90%;
+    margin: auto;
+    margin-top:50px ;
+    margin-bottom: 50px;
+}
+.mini-course-container h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+}

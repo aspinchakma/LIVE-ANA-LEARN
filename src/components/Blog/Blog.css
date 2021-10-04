@@ -1,0 +1,8 @@
+.total-view{
+   color:#7c7c7c;
+}
+.total-view:hover{
+    color:#ffb606;
+    transition: all .3s ease-in-out;
+
+}

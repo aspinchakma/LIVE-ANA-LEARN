@@ -1,0 +1,40 @@
+
+footer{
+    border:1px solid white;
+}
+footer:hover{
+    border:1px solid #0d1137;
+    transition: all .7s ease-in-out;
+}
+
+.mini-container{
+    width: 90%;
+    margin:auto;
+}
+.footer-container{
+    margin:auto;
+    line-height: 10px;
+}
+.subscribe h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.footer-container img{
+    width: 250px;
+
+}
+.footer-link-container{
+    line-height: 200px;
+    text-align: center;
+
+}
+.footer-link-container a{
+    text-decoration: none;
+    font-size:1.2rem;
+    padding:1rem 1.5rem;
+    text-align: center;
+}
+.footer-link-container a:hover{
+    color: #f6b43c;
+    transition:all 0.4s ease-in-out;
+}
